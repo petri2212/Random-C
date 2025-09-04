@@ -6,7 +6,9 @@ int sum(int a, int b){
 
 
 int main(void){
-    printf("hello world %d %d\n", sum(10,20));
-
+    int a = 10;
+    int b = 20;
+    int c = a + b;
+    printf("hello world %d %d\n", c);
     return 0;
 }
