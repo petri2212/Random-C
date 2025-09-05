@@ -1,18 +1,21 @@
 #include <stdio.h> // preprocessore, appunto esegue prima queta riga, poi viene compilato il file
 
+//int x = 0;
+
 int sum(int a, int b){
     return a+b;
 }
 
 int incr(void){
-    int x = 1;
-    x = x + 1; 
+    static int x = 0; // var globale dal punto di vista vita, ma locale dal punto di vista della visibilità 
+     x = x + 1; 
     printf("%d\n", x);
 }
 
 int main(void){
-
-    printf("hello world \n");
+    incr();
+       incr();
+          incr();
     return 0;
 }
 
