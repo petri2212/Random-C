@@ -4,8 +4,19 @@ int sum(int a, int b){
     return a+b;
 }
 
+int incr(void){
+    int x = 1;
+    x = x + 1; 
+    printf("%d\n", x);
+}
 
 int main(void){
+
+    printf("hello world \n");
+    return 0;
+}
+
+int main1(void){
     int a = 10;
     int b = 20;
     int c = a + b;
